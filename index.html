@@ -50,7 +50,7 @@
     <button id="bingogo" class="btn btn-primary btn-lg">抽下一個</button>
   </div>
 
-  <div class="mt-3 mb-3 text-center align-middle" style="height: 200px">
+  <div class="mt-3 mb-5 text-center align-middle" style="height: 200px">
     <div id='spinner' class="d-none">
       <div class="lds-circle">
         <div></div>
@@ -60,7 +60,7 @@
     <div id="finish" class="d-none">
       <div class="lead text-info">
         <div class="display-4">完</div>
-<!--        (｡◕‿‿◕｡)-->
+        <!--        (｡◕‿‿◕｡)-->
       </div>
       <div class="mt-3 text-center">
         <button id="restart" class="btn btn-info btn-lg">再嚟過</button>
@@ -130,8 +130,8 @@
   }
 
   function updateStatus() {
-    $('#selection').text(selection.join(', ')).parent().parent().toggle(!!selection);
-    $('#picked').text(picked.join(', ')).parent().parent().toggle(!!picked);
+    $('#selection').text(selection.join(', ')).parent().parent().toggle(!!selection.length);
+    $('#picked').text(picked.join(', ')).parent().parent().toggle(!!picked.length);
 
   }
 
