@@ -148,7 +148,7 @@
     updateStatus();
     $('#bingogo').on('click', function() {
 
-      if (selection) {
+      if (selection.length) {
         showSpinner(function() {
           const p = pickOneAndRemoveFromSelection(selection);
           $('#content').text(p);
